@@ -17,33 +17,38 @@
     <div class="left">
         <div class="logo-container">
             <img src="/odin-lined.png" width="100" alt="logo">
-            <p>ODIN</p>
+            <p id="logo-text">ODIN</p>
+
         </div>
+        <p id="photo-credit">Photo by <a
+                href="https://unsplash.com/photos/green-leaf-plant-in-close-up-photography-25xggax4bSA">Halie West</a>
+            on <a href="https://unsplash.com/">Unsplash</a></p>
     </div>
 
     <div class="right">
         <top class="top">
             <header>This is not a real online service! You know you need something like this in your life to help you
-                realize your deepest dreams. 
+                realize your deepest dreams.
                 <br>
-                Sign up now to get started.
+                Sign up <em>now</em> to get started.
                 <br>
                 <br>
-                You know you want to.
+                You <em>know</em> you want to.
             </header>
         </top>
 
         <div class="middle">
-            <form id="form" action="">
 
+            <form id="form" action="">
+                <p>Let's do this!</p>
                 <div>
                     <div>
                         <label for="fname">FIRST NAME</label>
-                        <input type="text" name="fname" id="fname">
+                        <input type="text" name="fname" id="fname" placeholder="John" required>
                     </div>
                     <div>
                         <label for="lname">LAST NAME</label>
-                        <input type="text" name="lname" id="lname">
+                        <input type="text" name="lname" id="lname" placeholder="Doe" required>
                     </div>
 
                 </div>
@@ -51,22 +56,22 @@
                 <div>
                     <div>
                         <label for="email">EMAIL</label>
-                        <input type="email" name="email" id="email">
+                        <input type="email" name="email" id="email" placeholder="john.doe@email.com">
                     </div>
                     <div>
-                        <label for="tel">PHONE</label>
-                        <input type="tel" name="tel" id="tel">
+                        <label for="tel">PHONE NUMBER</label>
+                        <input type="tel" name="tel" id="tel" placeholder="0172 172 40818">
                     </div>
                 </div>
 
                 <div>
                     <div>
-                        <label for="password">PASSWORD</label>
-                        <input type="password" name="password" id="password">
+                        <label for="password">*PASSWORD</label>
+                        <input type="password" name="password" id="password" required>
                     </div>
                     <div>
-                        <label for="confirm-password">CONFIRM PASSWORD</label>
-                        <input type="password" name="password" id="confirm-password">
+                        <label for="confirm-password">*CONFIRM PASSWORD</label>
+                        <input type="password" name="password" id="confirm-password" required>
                     </div>
                 </div>
 
@@ -74,8 +79,8 @@
 
         </div>
         <div class="bottom">
-            <button type="submit">Create Account</button>
-            <p>Already have an account? Log in</p>
+            <button type="submit" form="form">Create Account</button>
+            <p>Already have an account? <a href="">Log in</a></p>
         </div>
     </div>
 </body>
